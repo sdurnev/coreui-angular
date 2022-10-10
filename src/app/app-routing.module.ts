@@ -21,6 +21,11 @@ const routes: Routes = [
     },
     children: [
       {
+        path: 'bacs',
+        loadChildren: () =>
+          import('./views/bacs/bacs.module').then((m) => m.BacsModule)
+      },
+      {
         path: 'dashboard',
         loadChildren: () =>
           import('./views/dashboard/dashboard.module').then((m) => m.DashboardModule)
