@@ -20,6 +20,7 @@ import { WidgetsComponent } from './widgets/widgets.component';
 import { WidgetsBrandComponent } from './widgets-brand/widgets-brand.component';
 import { ChartSample, WidgetsDropdownComponent } from './widgets-dropdown/widgets-dropdown.component';
 import { WidgetsEComponent } from './widgets-e/widgets-e.component';
+import { WidgetsUpsComponent } from './widgets-ups/widgets-ups.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { WidgetsEComponent } from './widgets-e/widgets-e.component';
     WidgetsBrandComponent,
     WidgetsDropdownComponent,
     ChartSample,
-    WidgetsEComponent
+    WidgetsEComponent,
+    WidgetsUpsComponent
   ],
   imports: [
     CommonModule,
@@ -45,7 +47,8 @@ import { WidgetsEComponent } from './widgets-e/widgets-e.component';
   ],
   exports: [
     WidgetsBrandComponent,
-    WidgetsDropdownComponent
+    WidgetsDropdownComponent,
+    WidgetsUpsComponent
   ]
 })
 export class WidgetsModule {
