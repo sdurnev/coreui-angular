@@ -22,6 +22,10 @@ import { ChartSample, WidgetsDropdownComponent } from './widgets-dropdown/widget
 import { WidgetsEComponent } from './widgets-e/widgets-e.component';
 import { WidgetsUpsComponent } from './widgets-ups/widgets-ups.component';
 import { WidgetsUpsstatusComponent } from './widgets-upsstatus/widgets-upsstatus.component';
+import { WidgetsRgaugesComponent } from './widgets-rgauges/widgets-rgauges.component';
+
+import { FormsModule } from "@angular/forms";
+import { KnobModule } from "primeng/knob";
 
 @NgModule({
   declarations: [
@@ -31,7 +35,8 @@ import { WidgetsUpsstatusComponent } from './widgets-upsstatus/widgets-upsstatus
     ChartSample,
     WidgetsEComponent,
     WidgetsUpsComponent,
-    WidgetsUpsstatusComponent
+    WidgetsUpsstatusComponent,
+    WidgetsRgaugesComponent
   ],
   imports: [
     CommonModule,
@@ -45,13 +50,16 @@ import { WidgetsUpsstatusComponent } from './widgets-upsstatus/widgets-upsstatus
     CardModule,
     DocsComponentsModule,
     ProgressModule,
-    ChartjsModule
+    ChartjsModule,
+    KnobModule,
+    FormsModule
   ],
   exports: [
     WidgetsBrandComponent,
     WidgetsDropdownComponent,
     WidgetsUpsComponent,
-    WidgetsUpsstatusComponent
+    WidgetsUpsstatusComponent,
+    WidgetsRgaugesComponent
   ]
 })
 export class WidgetsModule {
