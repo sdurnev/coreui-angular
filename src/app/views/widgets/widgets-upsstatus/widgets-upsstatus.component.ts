@@ -1,12 +1,12 @@
 import { AfterContentInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-widgets-ups',
-  templateUrl: './widgets-ups.component.html',
-  styleUrls: ['./widgets-ups.component.scss'],
+  selector: 'app-widgets-upsstatus',
+  templateUrl: './widgets-upsstatus.component.html',
+  styleUrls: ['./widgets-upsstatus.component.scss'],
   changeDetection: ChangeDetectionStrategy.Default
 })
-export class WidgetsUpsComponent implements AfterContentInit {
+export class WidgetsUpsstatusComponent implements AfterContentInit {
 
   constructor(
     private changeDetectorRef: ChangeDetectorRef

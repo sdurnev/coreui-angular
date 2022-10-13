@@ -5,16 +5,16 @@ import { ChartjsModule } from '@coreui/angular-chartjs';
 import { IconModule } from '@coreui/icons-angular';
 import { IconSetService } from '@coreui/icons-angular';
 import { iconSubset } from '../../../icons/icon-subset';
-import { WidgetsUpsComponent } from './widgets-ups.component';
+import { WidgetsUpsstatusComponent } from './widgets-upsstatus.component';
 
 describe('WidgetsUpsComponent', () => {
-  let component: WidgetsUpsComponent;
-  let fixture: ComponentFixture<WidgetsUpsComponent>;
+  let component: WidgetsUpsstatusComponent;
+  let fixture: ComponentFixture<WidgetsUpsstatusComponent>;
   let iconSetService: IconSetService;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WidgetsUpsComponent ],
+      declarations: [ WidgetsUpsstatusComponent ],
       imports: [WidgetModule, GridModule, ChartjsModule, IconModule],
       providers: [IconSetService]
     })
@@ -25,7 +25,7 @@ describe('WidgetsUpsComponent', () => {
     iconSetService = TestBed.inject(IconSetService);
     iconSetService.icons = { ...iconSubset };
 
-    fixture = TestBed.createComponent(WidgetsUpsComponent);
+    fixture = TestBed.createComponent(WidgetsUpsstatusComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
