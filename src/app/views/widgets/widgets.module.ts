@@ -26,6 +26,7 @@ import { WidgetsRgaugesComponent } from './widgets-rgauges/widgets-rgauges.compo
 
 import { FormsModule } from "@angular/forms";
 import { KnobModule } from "primeng/knob";
+import {YamapModule} from "../../modules/yamap/yamap.module";
 
 @NgModule({
   declarations: [
@@ -38,22 +39,23 @@ import { KnobModule } from "primeng/knob";
     WidgetsUpsstatusComponent,
     WidgetsRgaugesComponent
   ],
-  imports: [
-    CommonModule,
-    WidgetsRoutingModule,
-    GridModule,
-    WidgetModule,
-    IconModule,
-    DropdownModule,
-    SharedModule,
-    ButtonModule,
-    CardModule,
-    DocsComponentsModule,
-    ProgressModule,
-    ChartjsModule,
-    KnobModule,
-    FormsModule
-  ],
+    imports: [
+        CommonModule,
+        WidgetsRoutingModule,
+        GridModule,
+        WidgetModule,
+        IconModule,
+        DropdownModule,
+        SharedModule,
+        ButtonModule,
+        CardModule,
+        DocsComponentsModule,
+        ProgressModule,
+        ChartjsModule,
+        KnobModule,
+        FormsModule,
+        YamapModule
+    ],
   exports: [
     WidgetsBrandComponent,
     WidgetsDropdownComponent,
