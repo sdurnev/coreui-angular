@@ -4,7 +4,7 @@ export const navItems: INavData[] = [
   {
     name: 'EPU',
     url: '/epu',
-    iconComponent: { name: 'cil-speedometer' },
+    iconComponent: { name: 'cil-memory' },
     badge: {
       color: 'info',
       text: 'NEW'
@@ -13,7 +13,7 @@ export const navItems: INavData[] = [
   {
     name: 'BACS',
     url: '/bacs',
-    iconComponent: { name: 'cil-speedometer' },
+    iconComponent: { name: 'cil-battery-full' },
     badge: {
       color: 'info',
       text: 'NEW'
