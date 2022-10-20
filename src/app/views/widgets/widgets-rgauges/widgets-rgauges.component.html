@@ -25,12 +25,13 @@
 
 <c-card class="text-center">
   <c-card-header>
-    <h6>U(V)</h6>
+    <h6 class="card-title mb-0">Напряжение вх</h6>
   </c-card-header>
   <c-card-body>
     <div class="field col-12 md:col-4">
     <p-knob [(ngModel)]="value7"
-            [size]="100">
+            valueTemplate="{value}V"
+            [size]="120">
     </p-knob>
     </div>
   </c-card-body>
