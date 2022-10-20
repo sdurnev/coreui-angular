@@ -1,1 +1,7 @@
-<p>table-event works!</p>
+<div style="width: 100%">
+  <jqxDataTable
+    [width]="getWidth()" [source]="dataAdapter" [columns]="columns"
+    [pageable]="true" [columnsResize]="true" [pagerButtonsCount]="5"
+    [pageSize]="5">
+  </jqxDataTable>
+</div>

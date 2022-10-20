@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {jqxDataTableModule} from "jqwidgets-ng/jqxdatatable";
+
 import { TableAlarmComponent } from './table-alarm/table-alarm.component';
 import { TableWarningsComponent } from './table-warnings/table-warnings.component';
 import { TableEventComponent } from './table-event/table-event.component';
@@ -21,7 +23,8 @@ import { TableMaintenanceComponent } from './table-maintenance/table-maintenance
     TableMaintenanceComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    jqxDataTableModule,
   ]
 })
 export class TablesModule { }

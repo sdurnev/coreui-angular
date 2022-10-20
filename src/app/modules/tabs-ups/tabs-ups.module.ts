@@ -4,6 +4,7 @@ import { TabsComponent } from './tabs/tabs.component';
 import {NavModule, TabsModule} from "@coreui/angular";
 import {RouterLinkWithHref} from "@angular/router";
 import {TablesModule} from "../tables/tables.module";
+import {SvdutestModule} from "../svdutest/svdutest.module";
 
 
 
@@ -14,12 +15,13 @@ import {TablesModule} from "../tables/tables.module";
     exports: [
         TabsComponent
     ],
-  imports: [
-    CommonModule,
-    NavModule,
-    RouterLinkWithHref,
-    TablesModule,
-    TabsModule
-  ]
+    imports: [
+        CommonModule,
+        NavModule,
+        RouterLinkWithHref,
+        TablesModule,
+        TabsModule,
+        SvdutestModule
+    ]
 })
 export class TabsUpsModule { }
