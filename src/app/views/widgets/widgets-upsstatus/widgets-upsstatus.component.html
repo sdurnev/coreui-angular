@@ -1,7 +1,77 @@
+<c-card class="mb-4">
+  <c-card-header>
+    <h4>Общие данные</h4>
+    <div style="overflow: hidden">
+      <div>
+        <div style="float: left">Адрес объекта:</div>
+        <div style="float: left">1-й Красногвардейский пр-д, 7А, Москва</div>
+      </div>
+      <div style="overflow: hidden">
+        <div style="float: right">07.04.2022</div>
+        <div style="float: right; overflow: hidden">Дата установки:</div>
+      </div>
+    </div>
+  </c-card-header>
+  <c-card-body>
+    <c-row>
+      <c-row>
+        <c-col>
+          <c-row>
+            <c-col>
+              <ul cListGroup flush>
+                <li cListGroupItem>Максимальная мощность объекта:
+                  <div style="overflow: hidden; float: right">3кВт</div>
+                </li>
+                <li cListGroupItem>Состав объекта:
+                  <div style="overflow: hidden; float: right">Шкаф в составе ЭПУ48В</div>
+                </li>
+                <li cListGroupItem>Наименование ЭПУ:
+                  <div style="overflow: hidden; float: right">EFORE_ESIL_PS</div>
+                </li>
+                <li cListGroupItem>Данные по АБК:
+                  <div style="overflow: hidden; float: right">LiFePo</div>
+                </li>
+                <li cListGroupItem>Статус Эпу:
+                  <div style="overflow: hidden; float: right">Буферный заряд</div>
+                </li>
+                <li cListGroupItem>Расчетное время автономной работы:
+                  <div style="overflow: hidden; float: right">28.45</div>
+                </li>
+              </ul>
+            </c-col>
+          </c-row>
+          <c-row [gutter]="4" class="mb-2" [md]="2" [xs]="1">
+            <c-col>
+              <app-widgets-rgauges></app-widgets-rgauges>
+            </c-col>
+            <c-col>
+              <app-widgets-rgauges></app-widgets-rgauges>
+            </c-col>
+            <c-col>
+              <app-widgets-rgauges></app-widgets-rgauges>
+            </c-col>
+            <c-col>
+              <app-widgets-rgauges></app-widgets-rgauges>
+            </c-col>
+          </c-row>
+        </c-col>
+        <c-col>
+          <app-yamap></app-yamap>
+        </c-col>
+      </c-row>
+      <c-col>
+        <app-tabs></app-tabs>
+      </c-col>
+    </c-row>
+  </c-card-body>
+</c-card>
+
+<!--
 <c-widget-stat-b class="mb-4 h4" title="Общие данные">
   <ng-container>
     <c-row>
       <c-col>
+        <br>
         <c-row>
           <c-col>
             <app-widgets-rgauges></app-widgets-rgauges>
@@ -18,13 +88,11 @@
             <app-widgets-rgauges></app-widgets-rgauges>
           </c-col>
         </c-row>
-      </c-col>
-      <c-col>
-        <app-yamap></app-yamap>
       </c-col>
     </c-row>
   </ng-container>
 
 
 </c-widget-stat-b>
+-->
 

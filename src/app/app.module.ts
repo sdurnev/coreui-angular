@@ -47,6 +47,7 @@ import {
 import { IconModule, IconSetService } from '@coreui/icons-angular';
 import {YamapModule} from "./modules/yamap/yamap.module";
 
+
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
 };

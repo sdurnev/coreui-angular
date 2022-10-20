@@ -14,6 +14,7 @@ export class WidgetsRgaugesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  //textColor: string = 'white';
   value1: number = 0;
   value2: number = 50;
   value3: number = 75;
@@ -24,12 +25,5 @@ export class WidgetsRgaugesComponent implements OnInit {
   value8: number = 60;
   value9: number = 50;
 
-  valueColor = "blue";
-  CheckValue(){
-    if (this.value7 <= 40){
-      this.valueColor = "red";
-    } else {
-      this.valueColor = "blue";
-    }
-  }
+  //valueColor = "blue";
 }

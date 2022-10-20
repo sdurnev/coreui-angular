@@ -3,6 +3,7 @@ import {CommonModule} from '@angular/common';
 import {YamapComponent} from './widgets/yamap/yamap.component';
 import {AngularYandexMapsModule, YaConfig} from 'angular8-yandex-maps';
 import {environment} from '../../../environments/environment';
+import {CardModule, GridModule, WidgetModule} from "@coreui/angular";
 
 
 const mapConfig: YaConfig = {
@@ -17,10 +18,13 @@ const mapConfig: YaConfig = {
   exports: [
     YamapComponent,
   ],
-  imports: [
-    CommonModule,
-    AngularYandexMapsModule.forRoot(mapConfig)
-  ]
+    imports: [
+        CommonModule,
+        AngularYandexMapsModule.forRoot(mapConfig),
+        WidgetModule,
+        GridModule,
+        CardModule
+    ]
 })
 export class YamapModule {
 }

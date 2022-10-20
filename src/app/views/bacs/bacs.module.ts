@@ -21,6 +21,7 @@ import { BacsRoutingModule } from './bacs-routing.module';
 import { BacsComponent } from './bacs.component';
 
 import { WidgetsModule } from '../widgets/widgets.module';
+import {SvdutestModule} from "../../modules/svdutest/svdutest.module";
 
 @NgModule({
   imports: [
@@ -40,7 +41,8 @@ import { WidgetsModule } from '../widgets/widgets.module';
     ChartjsModule,
     AvatarModule,
     TableModule,
-    WidgetsModule
+    WidgetsModule,
+    SvdutestModule
   ],
   declarations: [BacsComponent]
 })

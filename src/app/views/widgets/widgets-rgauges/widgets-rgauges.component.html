@@ -22,11 +22,20 @@
     <h5 class="p-mt-3">Template</h5>
     <p-knob [(ngModel)]="value6" valueTemplate="{value}%"></p-knob>
   </div>-->
-<div class="p-field p-col-12 p-md-4">
-  <!--<h5 class="p-mt-3">Stroke</h5>-->
-  <h5>Напряжение на входе</h5>
-  <p-knob [(ngModel)]="value7" [strokeWidth]="5" [valueColor]="valueColor"></p-knob>
-</div>
+
+<c-card class="text-center">
+  <c-card-header>
+    <h6>U(V)</h6>
+  </c-card-header>
+  <c-card-body>
+    <div class="field col-12 md:col-4">
+    <p-knob [(ngModel)]="value7"
+            [size]="100">
+    </p-knob>
+    </div>
+  </c-card-body>
+</c-card>
+
 <!--  <div class="p-field p-col-12 p-md-4">
     <h5 class="p-mt-3">Size</h5>
     <p-knob [(ngModel)]="value8" [size]="200"></p-knob>

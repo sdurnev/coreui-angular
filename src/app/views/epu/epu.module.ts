@@ -21,27 +21,29 @@ import { EpuRoutingModule } from './epu-routing.module';
 import { EpuComponent } from './epu.component';
 
 import { WidgetsModule } from '../widgets/widgets.module';
+import {YamapModule} from "../../modules/yamap/yamap.module";
 
 @NgModule({
-  imports: [
-    EpuRoutingModule,
-    CardModule,
-    NavModule,
-    IconModule,
-    TabsModule,
-    CommonModule,
-    GridModule,
-    ProgressModule,
-    ReactiveFormsModule,
-    ButtonModule,
-    FormModule,
-    ButtonModule,
-    ButtonGroupModule,
-    ChartjsModule,
-    AvatarModule,
-    TableModule,
-    WidgetsModule
-  ],
+    imports: [
+        EpuRoutingModule,
+        CardModule,
+        NavModule,
+        IconModule,
+        TabsModule,
+        CommonModule,
+        GridModule,
+        ProgressModule,
+        ReactiveFormsModule,
+        ButtonModule,
+        FormModule,
+        ButtonModule,
+        ButtonGroupModule,
+        ChartjsModule,
+        AvatarModule,
+        TableModule,
+        WidgetsModule,
+        YamapModule
+    ],
   declarations: [EpuComponent]
 })
 export class EpuModule {
