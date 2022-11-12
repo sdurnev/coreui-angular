@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { TestComponent } from './test/test.component';
 import {jqxDataTableModule} from "jqwidgets-ng/jqxdatatable";
 import {jqxGridModule} from "jqwidgets-ng/jqxgrid";
+import { jqxGaugeModule } from 'jqwidgets-ng/jqxgauge';
+import { jqxLinearGaugeModule } from 'jqwidgets-ng/jqxlineargauge';
+import {CardModule} from "@coreui/angular";
 
 
 
@@ -16,7 +19,10 @@ import {jqxGridModule} from "jqwidgets-ng/jqxgrid";
   imports: [
     CommonModule,
     jqxDataTableModule,
-    jqxGridModule
+    jqxGridModule,
+    jqxGaugeModule,
+    jqxLinearGaugeModule,
+    CardModule
   ]
 })
 export class SvdutestModule { }

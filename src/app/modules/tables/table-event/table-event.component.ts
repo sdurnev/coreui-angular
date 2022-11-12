@@ -1,5 +1,4 @@
-import {AfterViewInit, Component, OnInit, ViewChild, ViewEncapsulation} from '@angular/core';
-import {jqxDataTableModule} from "jqwidgets-ng/jqxdatatable";
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'app-table-event',
@@ -43,7 +42,7 @@ export class TableEventComponent implements OnInit {
     ];
 
   generateData(): any[] {
-    let data = new Array();
+    let data = [];
     let firstNames =
       [
         'Andrew', 'Nancy', 'Shelley', 'Regina', 'Yoshi', 'Antoni', 'Mayumi', 'Ian', 'Peter', 'Lars', 'Petra', 'Martin', 'Sven', 'Elio', 'Beate', 'Cheryl', 'Michael', 'Guylene'

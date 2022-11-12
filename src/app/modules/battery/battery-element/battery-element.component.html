@@ -1,0 +1,24 @@
+<div class="container">
+  <jqxHeatMap
+    #myHeatMap
+    [xAxis]="xAxis"
+    [yAxis]="yAxis"
+    [source]="data"
+    [legendSettings]="legendSettings"
+    [title]="'Состояние батарей'">
+  </jqxHeatMap>
+
+  <div id="palette-mode">
+    <label>Palette Type:</label>
+    <div id="radio-buttons">
+      <jqxRadioButton (onChecked)="setGradientType($event)" [checked]="true">
+        Gradient
+      </jqxRadioButton>
+      <jqxRadioButton (onChecked)="setFixedType($event)">
+        Fixed
+      </jqxRadioButton>
+    </div>
+  </div>
+
+
+</div>

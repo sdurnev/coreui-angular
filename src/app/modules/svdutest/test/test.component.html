@@ -1,13 +1,20 @@
-<jqxGrid
-  [selectionmode]="'checkbox'"
-  [source]="source"
-  [theme]="'material'"
-  [autoheight]="true"
-  [pageable]="true"
-  [pagesizeoptions]="['5','10', '20', '30']"
-  [altrows]="true"
-  [filterable]="true"
-  [sortable]="true"
-  [columns]="columns"
-  >
-</jqxGrid>
+<c-card class="text-center">
+  <c-card-header>
+    <h6 class="card-title mb-0">Напряжение вх</h6>
+  </c-card-header>
+  <c-card-body>
+    <div style="float: left">
+      <jqxGauge #myGauge (onValueChanging)="onValueChanging($event)"
+                [ranges]="ranges" [ticksMinor]="ticksMinor" [ticksMajor]="ticksMajor"
+                [value]="0" [colorScheme]="'scheme11'" [max]="'100'"
+                [width]="'160'" [height]="'160'" [radius]="'80'" [animationDuration]="1200">
+      </jqxGauge>
+    </div>
+  </c-card-body>
+</c-card>
+<!--<jqxLinearGauge #myLinearGauge style="margin-left: 60px; float: left;"
+                [width]="100" [height]="350" [max]="60" [orientation]="'vertical'"
+                [ticksMajor]="ticksMajorLinear" [ticksMinor]="ticksMinorLinear"
+                [pointer]="{ size: '5%' }" [colorScheme]="'scheme05'" [labels]="labels"
+                [ranges]="rangesLinear" [animationDuration]="1500">
+</jqxLinearGauge>-->

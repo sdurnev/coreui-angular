@@ -29,6 +29,7 @@ import { FormsModule } from "@angular/forms";
 import { KnobModule } from "primeng/knob";
 import {YamapModule} from "../../modules/yamap/yamap.module";
 import {TabsUpsModule} from "../../modules/tabs-ups/tabs-ups.module";
+import {SvdutestModule} from "../../modules/svdutest/svdutest.module";
 
 @NgModule({
   declarations: [
@@ -41,28 +42,29 @@ import {TabsUpsModule} from "../../modules/tabs-ups/tabs-ups.module";
     WidgetsUpsstatusComponent,
     WidgetsRgaugesComponent
   ],
-  imports: [
-    CommonModule,
-    WidgetsRoutingModule,
-    GridModule,
-    WidgetModule,
-    IconModule,
-    DropdownModule,
-    SharedModule,
-    ButtonModule,
-    CardModule,
-    DocsComponentsModule,
-    ProgressModule,
-    ChartjsModule,
-    KnobModule,
-    FormsModule,
-    YamapModule,
-    ModalModule,
-    ListGroupModule,
-    BadgeModule,
-    NavModule,
-    TabsUpsModule
-  ],
+    imports: [
+        CommonModule,
+        WidgetsRoutingModule,
+        GridModule,
+        WidgetModule,
+        IconModule,
+        DropdownModule,
+        SharedModule,
+        ButtonModule,
+        CardModule,
+        DocsComponentsModule,
+        ProgressModule,
+        ChartjsModule,
+        KnobModule,
+        FormsModule,
+        YamapModule,
+        ModalModule,
+        ListGroupModule,
+        BadgeModule,
+        NavModule,
+        TabsUpsModule,
+        SvdutestModule
+    ],
   exports: [
     WidgetsBrandComponent,
     WidgetsDropdownComponent,

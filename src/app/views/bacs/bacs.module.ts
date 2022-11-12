@@ -22,6 +22,8 @@ import { BacsComponent } from './bacs.component';
 
 import { WidgetsModule } from '../widgets/widgets.module';
 import {SvdutestModule} from "../../modules/svdutest/svdutest.module";
+import {BatteryModule} from "../../modules/battery/battery.module";
+//import {BatteryModule} from "../../modules/battery/battery.module";
 
 @NgModule({
   imports: [
@@ -42,7 +44,9 @@ import {SvdutestModule} from "../../modules/svdutest/svdutest.module";
     AvatarModule,
     TableModule,
     WidgetsModule,
-    SvdutestModule
+    SvdutestModule,
+    BatteryModule,
+    //BatteryModule
   ],
   declarations: [BacsComponent]
 })
