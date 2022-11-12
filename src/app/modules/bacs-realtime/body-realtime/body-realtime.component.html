@@ -1,0 +1,20 @@
+<c-card class="mb-4">
+  <c-card-header>
+    <h4 class="card-title mb-0">Текущие данные</h4>
+  </c-card-header>
+  <c-card-body class="text-center">
+    <c-nav variant="tabs">
+      <a [active]="true" [cTabContent]="tabContent" [routerLink] [tabPaneIdx]="0" cNavLink>Стринг</a>
+      <a [cTabContent]="tabContent" [routerLink] [tabPaneIdx]="1" cNavLink>Батареи</a>
+    </c-nav>
+    <c-tab-content #tabContent="cTabContent">
+      <c-tab-pane class="p-3">
+
+      </c-tab-pane>
+      <c-tab-pane class="p-3">
+
+      </c-tab-pane>
+    </c-tab-content>
+
+  </c-card-body>
+</c-card>

@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {ReactiveFormsModule} from '@angular/forms';
 
 import {
   AvatarModule,
@@ -14,16 +14,17 @@ import {
   TableModule,
   TabsModule
 } from '@coreui/angular';
-import { IconModule } from '@coreui/icons-angular';
-import { ChartjsModule } from '@coreui/angular-chartjs';
+import {IconModule} from '@coreui/icons-angular';
+import {ChartjsModule} from '@coreui/angular-chartjs';
 
-import { BacsRoutingModule } from './bacs-routing.module';
-import { BacsComponent } from './bacs.component';
+import {BacsRoutingModule} from './bacs-routing.module';
+import {BacsComponent} from './bacs.component';
 
-import { WidgetsModule } from '../widgets/widgets.module';
+import {WidgetsModule} from '../widgets/widgets.module';
 import {SvdutestModule} from "../../modules/svdutest/svdutest.module";
 import {BatteryModule} from "../../modules/battery/battery.module";
-//import {BatteryModule} from "../../modules/battery/battery.module";
+import {BacsRealtimeModule} from "../../modules/bacs-realtime/bacs-realtime.module";
+
 
 @NgModule({
   imports: [
@@ -46,7 +47,7 @@ import {BatteryModule} from "../../modules/battery/battery.module";
     WidgetsModule,
     SvdutestModule,
     BatteryModule,
-    //BatteryModule
+    BacsRealtimeModule,
   ],
   declarations: [BacsComponent]
 })
